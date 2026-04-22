@@ -12,4 +12,8 @@ public class Estudiant extends Usuari{
         return 1;
     }
 
+    @Override
+    public String tipusUsuari() {
+        return "Estudiant";
+    }
 }

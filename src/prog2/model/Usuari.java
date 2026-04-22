@@ -1,6 +1,8 @@
 package prog2.model;
 
-public abstract class Usuari implements InUsuari{
+import java.io.Serializable;
+
+public abstract class Usuari implements InUsuari, Serializable {
     private String email;
     private String nom;
     private String adreca;
@@ -33,7 +35,7 @@ public abstract class Usuari implements InUsuari{
     public void setAdreca(String adreca) {
         this.adreca = adreca;
     }
-    public String tipusUsuari();
+    public abstract String tipusUsuari();
 
     public int getNumPrestecsNormals() {
         return numPrestecsNormals;
@@ -46,5 +48,10 @@ public abstract class Usuari implements InUsuari{
     }
     public void setNumPrestecsLlargs(int numPrestecsLlargs) {
         this.numPrestecsLlargs = numPrestecsLlargs;
+    }
+    @Override
+    public String toString(){
+        return "Tipus=" + tipusUsuari() + ", Email=" + email + ", Nom=" + nom +", Adreca=" + adreca +
+                ", Num. prestecs normals=" + numPrestecsNormals + ", Num. prestecs llargs=" + numPrestecsLlargs;
     }
 }
