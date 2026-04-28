@@ -13,6 +13,6 @@ public class PrestecNormal extends Prestec implements Serializable {
     }
     @Override
     public long duradaPrestec() {
-        return 70000; // 70 segons en mil·lisegons
+        return 70000;
     }
 }

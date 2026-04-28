@@ -37,7 +37,7 @@ public interface InDades {
     public void afegirPrestec(int exemplarPos, int usuariPos, boolean esLlarg) throws BiblioException;
 
     /**
-     * Retornar préstec. Llança excepció si el prestec ja es vaig retornar.
+     * Retornar préstec. Llança excepció si el prestec ja es va retornar.
      * El préstec s'identifica amb la seva posició dins de l'ArrayList
      */
     public void retornarPrestec(int position) throws BiblioException;
