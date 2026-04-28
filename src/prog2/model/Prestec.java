@@ -11,7 +11,6 @@ public abstract class Prestec implements InPrestec, Serializable {
     private Date dataLimitRetorn;
     private boolean retornat;
 
-    // El constructor solo necesita exemplar y usuari, el resto se calcula
     public Prestec(Exemplar exemplar, Usuari usuari) {
         this.exemplar = exemplar;
         this.usuari = usuari;
