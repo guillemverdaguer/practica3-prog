@@ -1,4 +1,6 @@
 package prog2.model;
 
-public class LlistaExemplars {
+import java.io.Serializable;
+
+public class LlistaExemplars extends Llista<Exemplar> implements Serializable {
 }
