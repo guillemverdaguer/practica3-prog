@@ -33,8 +33,12 @@ public class Exemplar implements InExemplar, Serializable {
 
     @Override
     public boolean equals(Object o) {
-
+        if (this == o) return true;
+        if (!(o instanceof Exemplar)) return false;
+        Exemplar e = (Exemplar) o;
+        return e.getId().equals(id);
     }
+
     @Override
     public String toString(){
         return "Id=" + id + ", Titol=" + titol + ", Autor=" + autor +

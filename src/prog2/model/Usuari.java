@@ -54,4 +54,11 @@ public abstract class Usuari implements InUsuari, Serializable {
         return "Tipus=" + tipusUsuari() + ", Email=" + email + ", Nom=" + nom +", Adreca=" + adreca +
                 ", Num. prestecs normals=" + numPrestecsNormals + ", Num. prestecs llargs=" + numPrestecsLlargs;
     }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Usuari)) return false;
+        Usuari u = (Usuari) o;
+        return u.getEmail().equals(email);
+    }
 }
