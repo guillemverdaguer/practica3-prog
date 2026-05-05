@@ -4,6 +4,7 @@ import prog2.vista.BiblioException;
 
 import java.util.ArrayList;
 
+
 public interface InLlista<T> {
     int getSize();
 
