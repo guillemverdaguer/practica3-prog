@@ -2,16 +2,17 @@ package prog2.model;
 
 import java.io.Serializable;
 
-public class PrestecLlarg extends Prestec implements Serializable {
+public class PrestecNormal extends Prestec implements Serializable {
 
-    public PrestecLlarg(Exemplar exemplar, Usuari usuari) {
+    public PrestecNormal(Exemplar exemplar, Usuari usuari) {
         super(exemplar, usuari);
     }
     @Override
     public String tipusPrestec() {
-        return "Llarg";
+        return "Normal";
     }
     @Override
     public long duradaPrestec() {
-        return 140000;
+        return 70000;
+    }
 }
